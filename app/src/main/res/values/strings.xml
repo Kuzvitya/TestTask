@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="menu_search_item">Поиск</string>
+
+    <!-- Список книг -->
+    <string name="books_list_cover_description">Обложка книги</string>
+    <string name="books_list_date_wildcard">Дата издания: %s</string>
+
+    <!-- Детали книги -->
+    <string name="book_details_title">Подробная информация</string>
+    <string name="book_details_date_hint">Дата издания:</string>
+</resources>

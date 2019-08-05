@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp" >
+
+        <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:src="@color/colorAccent"
+                android:contentDescription="@string/books_list_cover_description"/>
+
+        <TextView
+                android:id="@+id/tvName"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@id/ivIcon"
+                app:layout_constraintTop_toTopOf="@id/ivIcon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvDate"
+                tools:text="Книга1"
+
+        />
+        <TextView
+                android:id="@+id/tvDate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/tvName"
+                app:layout_constraintTop_toBottomOf="@id/tvName"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+                tools:text="Дата издания 10.02.2012"
+
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    
+</androidx.cardview.widget.CardView>
+        
+        
