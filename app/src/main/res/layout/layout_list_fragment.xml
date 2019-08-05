@@ -14,7 +14,7 @@
             android:id="@+id/rvChipsList"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/actionbarAccent"
             app:layout_constraintRight_toRightOf="parent" />
@@ -23,7 +23,7 @@
             android:id="@+id/rvList"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/rvChipsList"
             app:layout_constraintRight_toRightOf="parent"

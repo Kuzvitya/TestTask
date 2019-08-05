@@ -9,15 +9,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:paddingTop="8dp"
-            android:paddingEnd="8dp"
-            android:paddingBottom="8dp" >
+            android:paddingStart="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingEnd="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small" >
 
         <ImageView
                 android:id="@+id/ivIcon"
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="@dimen/book_cover_image_width"
+                android:layout_height="@dimen/book_cover_image_height"
                 android:scaleType="fitXY"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -29,7 +29,7 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/margin_small"
                 android:maxLines="1"
                 android:ellipsize="end"
                 app:layout_constraintVertical_chainStyle="packed"

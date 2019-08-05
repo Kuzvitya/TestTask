@@ -18,12 +18,12 @@
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="@dimen/padding_medium">
 
             <ImageView
                     android:id="@+id/ivCover"
-                    android:layout_width="70dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/book_cover_image_width"
+                    android:layout_height="@dimen/book_cover_image_height"
                     android:scaleType="fitXY"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="@dimen/margin_medium"
                     android:gravity="center"
                     app:layout_constraintLeft_toRightOf="@id/ivCover"
                     app:layout_constraintRight_toRightOf="parent"
@@ -48,7 +48,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_small"
                     app:layout_constraintTop_toBottomOf="@id/ivCover"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -59,7 +59,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_small"
                     android:text="@string/book_details_date_hint"
                     app:layout_constraintHorizontal_chainStyle="spread_inside"
                     app:layout_constraintLeft_toLeftOf="parent"
